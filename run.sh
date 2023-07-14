@@ -1,0 +1,3 @@
+# Rust doesn't let us build with a specific binary name, so we have to get
+# a bit hacky here...
+find target/release/ -maxdepth 1 -type f -executable -exec {} \;
